@@ -1,0 +1,31 @@
+{
+  "name": "regex-tutorial",
+  "version": "1.0.0",
+  "description": "working through net ninja's tutorial on regex https://www.youtube.com/playlist?list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch",
+    "watch": "concurrently \"npm:watch-*\"",
+    "watch-babel": "npx babel scripts/compile -w -o scripts/main-compiled.js",
+    "watch-pug": "pug -w pug -o html",
+    "watch-sass": "sass --watch stylesheets/sass:stylesheets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RudsonA/TheNetNinjaTutorials.git"
+  },
+  "author": "rudson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RudsonA/TheNetNinjaTutorials/issues"
+  },
+  "homepage": "https://github.com/RudsonA/TheNetNinjaTutorials#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "concurrently": "^4.1.0",
+    "pug": "^2.0.3",
+    "sass": "^1.19.0"
+  }
+}
