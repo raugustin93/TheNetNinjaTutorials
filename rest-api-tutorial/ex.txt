@@ -1,0 +1,5 @@
+app.get('/', (req,resp) => {
+    console.log('GET Request');
+    resp.send({name: 'Rudson'});
+})
+
