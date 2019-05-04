@@ -3,3 +3,10 @@ app.get('/', (req,resp) => {
     resp.send({name: 'Rudson'});
 })
 
+response.send({
+            type: 'POST',
+            name: request.body.name,
+            age: request.body.age
+        })
+
+
