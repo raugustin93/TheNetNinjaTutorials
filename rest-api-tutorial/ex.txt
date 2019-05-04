@@ -1,0 +1,12 @@
+app.get('/', (req,resp) => {
+    console.log('GET Request');
+    resp.send({name: 'Rudson'});
+})
+
+response.send({
+            type: 'POST',
+            name: request.body.name,
+            age: request.body.age
+        })
+
+
