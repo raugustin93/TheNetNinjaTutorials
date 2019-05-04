@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch",
+    "watch": "concurrently \"npm:watch-*\"",
+    "watch-pug": "pug -w pug -o public -P",
+    "watch-browsersync": "browser-sync start --server \"public\" --files \"public\"",
+    "watch-sass": "sass --watch sass:public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.5",
+    "concurrently": "^4.1.0",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.20.1"
+  }
+}
