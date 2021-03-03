@@ -27,7 +27,7 @@
     "@babel/core": "^7.4.4",
     "browser-sync": "^2.26.5",
     "concurrently": "^4.1.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "sass": "^1.19.0"
   }
 }
